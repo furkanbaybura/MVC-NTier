@@ -1,0 +1,13 @@
+1-ConnectionSetting ayarlarını app settingsde yap
+2-Katmanlarını oluştur(BLL,DAL,Entities,Dtos)
+3- NugetPackage dan DAL için 4 önemli paketi yükle (AutoMapper,tools,sql,Core)
+4-DAL'ın içine Data klasörü aç ve içine DbContext aç ve ayarlarını yap
+5-Program.cs içine DbContext'ini servis olarak ekle
+6-DAL'ın içine repo klasörü aç ve abstract,Concrete dosyalarını oluştur
+7-Abstract : IRepo(metodlarını tanımla) ve Abstract Repo(içi dolu metodlar)
+8-Concrete : EntityRepo'larını oluştur içini doldur
+9-Service klasörünü oluştur ve abstract,concrete dosyalarını oluştur
+10-Abstract: IService ve Abstract Service
+11-Concrete : DtoService'lerini oluştur ve içini doldur
+12-DAL'ın içine Profiles klasörünü oluştur
+13-xxxProfile.cs dosyalarını oluştur (burası mapleme yapılacak yer)
