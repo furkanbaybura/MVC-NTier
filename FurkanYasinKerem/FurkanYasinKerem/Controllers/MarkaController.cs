@@ -56,7 +56,7 @@ namespace FurkanYasinKerem.Controllers
             if (model.logoResim is not null)
             {
                 var konum = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", model.logoResim.FileName);
-
+                model.logoAd = model.logoResim.FileName;
                 //Kaydetmek için bir akış ortamı oluşturalım
                 var akisOrtami = new FileStream(konum, FileMode.Create);
 

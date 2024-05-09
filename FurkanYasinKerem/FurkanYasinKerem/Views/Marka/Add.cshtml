@@ -1,0 +1,20 @@
+﻿<h1>Marka EKLEME</h1>
+@model MarkaViewModel
+<form asp-action="Add" asp-controller="Marka" enctype="multipart/form-data" >
+    <div class="form-group">
+        <label asp-for="Name"> </label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="form-text text-danger"></span>
+        <div class="form-group">
+            <label asp-for="logoResim"> </label>
+            <input asp-for="logoResim" type="file" class="form-control" />
+            <span asp-validation-for="logoResim" class="form-text text-danger"></span>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">EKLE</button>
+
+</form>
+
+@section Scripts {
+    @Html.Partial("_ValidationScriptsPartial")
+}
